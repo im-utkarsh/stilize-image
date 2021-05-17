@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>HOME</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+</head>
+<body>
+    <div class="glitch-outer">
+        <h1 class="glitch" data-text="StyliZe ImagE">StyliZe ImagE</h1>
+    </div>
+	<div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <div class="form">
+                <h1>Style Image</h1>
+                <input class="style" type="url" placeholder="https://example.com" accept="image/*">
+                <span>OR</span>
+                <input class="style" id="inputcontent" type="file" accept=".jpg,.png,.jpeg">
+                <label for="inputcontent">Tap to choose file</label>
+            </div>
+        </div>
+        <div class="form-container sign-in-container">
+            <div class="form">
+                <h1>Content Image</h1>
+                <input class="content" type="url" placeholder="https://example.com" accept="image/*">
+                <span>OR</span>
+                <input class="content" id="inputstyle" type="file" accept=".jpg,.png,.jpeg">
+                <label for="inputstyle">Tap to choose file</label>
+            </div>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div id="style" class="overlay-panel overlay-left">
+                    <div class="card">
+                        <h1>Style Image!</h1>
+                        <img class="style" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/1200px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg">
+                        <div class="ghost btn" id="styleImg">Select Content Image</div>
+                    </div>
+                </div>
+                <div id="content" class="overlay-panel overlay-right">
+                    <div class="card">
+                        <h1>Content Image!</h1>
+                        <img class="content" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Tuebingen_Neckarfront.jpg">
+                        <div class="ghost btn" id="contentImg">Select Style Image</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<form action="" method="POST">
+		<input type="url" name="content" value="https://upload.wikimedia.org/wikipedia/commons/0/00/Tuebingen_Neckarfront.jpg" accept="image/*" required>
+		<input type="url" name="style" value="https://upload.wikimedia.org/wikipedia/commons/7/7d/Amadeo_de_Souza-Cardoso%2C_1915_-_Landscape_with_black_figure.jpg" accept="image/*" required>
+		<div class="btn"><span>Generate</span>
+            <div class="sk-fading-circle">
+                <div class="sk-circle1 sk-circle"></div>
+                <div class="sk-circle2 sk-circle"></div>
+                <div class="sk-circle3 sk-circle"></div>
+                <div class="sk-circle4 sk-circle"></div>
+                <div class="sk-circle5 sk-circle"></div>
+                <div class="sk-circle6 sk-circle"></div>
+                <div class="sk-circle7 sk-circle"></div>
+                <div class="sk-circle8 sk-circle"></div>
+                <div class="sk-circle9 sk-circle"></div>
+                <div class="sk-circle10 sk-circle"></div>
+                <div class="sk-circle11 sk-circle"></div>
+                <div class="sk-circle12 sk-circle"></div>
+            </div>
+        </div>
+    </form>
+    <div class="go-pc">^_^ For better visuals please visit on PC ^_^</div>
+    <script src="{{ url_for('static',filename='index.js') }}"></script>
+</body></html>
