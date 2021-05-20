@@ -10,7 +10,8 @@ The web app takes style and content image as input via upload or link and genera
 > requests==2.25.1  
 > tensorflow==2.4.1   
 
-All other dependencies will be installed automatically.
+All other dependencies will be installed automatically.  
+The pretrained model is available at https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2
 
 ## Description
 Flask is used for devloping this web application.
@@ -33,3 +34,10 @@ The output image is then converted to base64 data url and send to front-end.
 ## Deployment
 The deployment is done on heroku using gunicorn.  
 Please note the deployment is done using tensorflow-cpu and tensorflow-hub due to heroku slug limit (500MB). The app may not perform well due to the same memory limit.
+
+## Refrences
+https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/tf2_arbitrary_image_stylization.ipynb  
+Stack Overflow  
+https://codepen.io/FlorinPop17/pen/vPKWjd  
+https://codepen.io/vladracoare/pen/WNQGZxy  
+https://codepen.io/cipherbeta/pen/YLdVjw  
